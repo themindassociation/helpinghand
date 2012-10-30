@@ -10,21 +10,26 @@
 	<?php echo Asset::js('bootstrap.js'); ?>	
 </head>
 <body>
+	<div class="container">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
 
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a href="#" class="brand">TheMind</a>
-				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
+				<div class="container">
+
+					<a href="#" class="brand">TheMIND</a>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+
+				</div>	
+				
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="row-fluid">
+		<div class="row">
 			<div class="span12">
 
 <?php if (Session::get_flash('success')): ?>

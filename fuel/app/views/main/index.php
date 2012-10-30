@@ -1,4 +1,4 @@
-<div id="index" class="well">
+<div class="well">
 I haz well!
 </div>
 
