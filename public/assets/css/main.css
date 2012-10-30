@@ -8,3 +8,10 @@ body {
 	body { padding-top: 0px; }
 }
 
+.hero-unit {
+	height: 200px;
+}
+
+.icon-huge {
+	font-size: 100px;
+}

@@ -10,21 +10,25 @@
 	<?php echo Asset::js('bootstrap.js'); ?>	
 </head>
 <body>
-	<div class="container">
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-
-				<div class="container">
-
-					<a href="#" class="brand">TheMIND</a>
-					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-					</ul>
-
-				</div>	
-				
-			</div>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="#" class="brand">TheMIND</a>
+				<ul class="nav">
+					<li class="active">
+						<a href="#">
+							<i class="icon-home icon-white"></i>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<!-- <i class="icon-info-sign icon-white"></i> -->
+							About
+						</a>
+					</li>
+				</ul>
+			</div>	
 		</div>
 	</div>
 
@@ -34,12 +38,14 @@
 
 <?php if (Session::get_flash('success')): ?>
 				<div class="alert alert-success">
+					<!-- <button type="button" class="close" data-dismiss="alert">×</button> -->
 					<?php echo implode('</p><p>', e((array) Session::get_flash('success'))); ?>
 				</div>
 <?php endif; ?>
 
 <?php if (Session::get_flash('error')): ?>
 				<div class="alert alert-error">
+					<!-- <button type="button" class="close" data-dismiss="alert">×</button> -->
 					<?php echo implode('</p><p>', e((array) Session::get_flash('error'))); ?>
 				</div>
 <?php endif; ?>
