@@ -6,7 +6,7 @@
  */
 
 return array(
-	'active' => 'default',
+	'active' => 'development',
 
 	/**
 	 * Base config, just need to set the DSN, username and password in env. config.
@@ -29,6 +29,24 @@ return array(
 			'port'      => 6379,
 			'timeout'	=> null,
 		)
+	),
+
+	'development' => array(
+		'type'           => 'mysqli',
+		'connection'     => array(
+			'hostname'       => 'localhost',
+			'port'           => '3306',
+			'database'       => 'themind',
+			'username'       => 'themind',
+			'password'       => 'themind',
+			'persistent'     => false,
+			'compress'       => false,
+		),
+		'identifier'   => '`',
+		'table_prefix'   => '',
+		'charset'        => 'utf8',
+		'enable_cache'   => true,
+		'profiling'      => false,
 	),
 
 );
