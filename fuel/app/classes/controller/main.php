@@ -5,8 +5,8 @@ class Controller_Main extends Controller_Template
 
 	public function action_index()
 	{
-		// Session::set_flash('success', 'oh yeah!');
-		// Session::set_flash('error', 'oh noes!');
+		Session::set_flash('success', 'oh yeah!');
+		Session::set_flash('error', 'oh noes!');
 		$this->template->title = 'TheMIND';
 		$this->template->content = View::forge('main/index');
 	}
